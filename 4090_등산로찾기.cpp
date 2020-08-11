@@ -152,6 +152,7 @@ int main(){
             P.first = sy;
             P.second = sx;
             force[sy][sx] = map[sy][sx] * map[sy][sx];
+            visit[sy][sx] = 1; 
             process(P);
             
             if(force[ey][ex] < answer){
